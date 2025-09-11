@@ -5,11 +5,6 @@ import { resolve } from "path";
 export default defineConfig({
   plugins: [react()],
   resolve: { alias: { "@": resolve(__dirname, "src") } },
-  build: {
-    rollupOptions: {
-      input: {
-        qr: resolve(__dirname, "qr.html")
-      }
-    }
-  }
+  server: { host: true, port: 5173 },
+  preview: { host: true, port: 5173 },
 });
