@@ -12,6 +12,7 @@ export default defineConfig({
       input: {
         admin: resolve(__dirname, "admin.html"),
         qr: resolve(__dirname, "qr.html"),
+        index: resolve(__dirname, "index.html"),
       },
     },
   },
